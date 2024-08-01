@@ -1,0 +1,116 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    /* height: 1000px; */
+    width: 100%;
+}
+
+.left {
+    width: 45%;
+    background-color: #FFC107; /* Màu vàng */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 0 200px 200px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 70px;
+}
+
+.right {
+    width: 60%;
+    background: url('img/anhbia.jpg') no-repeat center center fixed;
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 5px;
+}
+
+.content {
+    max-width: 500px;
+    text-align: center;
+}
+
+.hidden {
+    top: -50px;
+}
+
+.myForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.myForm > h2 {
+    font-size: 26px;
+}
+.myForm > p {
+    font-size: 50px;
+    padding: 0 !important;
+    margin: 0 0 10px 0;
+}
+.myForm > input {
+    width: 350px;
+    height: 30px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding: 5px 0px 5px 20px;
+    border: none;
+    font-size: 18px;
+}
+.myForm > button {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+    width: 160px;
+    height: 45px;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+}
+.myForm > button:hover {
+    background-color: #0c7625;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+.right-hover {
+    display: none;
+
+}
+.banner-zalo {
+    width: 100%;
+    height: auto;
+    background: url('img/banner.jpg');
+    background-size: cover;
+}
+.need-attention {
+    color: rgb(201, 0, 0);
+    font-size: 20px;
+}
+@media only screen and (max-width: 600px) {
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .left {
+        border-radius: 0;
+      width: 100%;
+    }
+    .right-hover {
+        display: flex;
+    }
+    .right-hover > img {
+        width: 100%;
+        height: auto;
+    }
+    .myForm > input {
+        width: 80%;
+    }
+}

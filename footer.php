@@ -1,0 +1,1 @@
+<script src="click.js"></script>
